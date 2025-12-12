@@ -9,7 +9,7 @@
         "role": "AI Shopping Assistant",
         "initialMessage": "Hello! I'm Zova, your Aura Living assistant. How can I help you curate your home today?"
     },
-    "workerUrl": "your cloudflare workerUrl",
+    "workerUrl": "https://your-worker.your-subdomain.workers.dev",
     "llmConfig": {
         "model": "gemini-2.5-flash-lite",
         "systemPrompt": "You are Zova, a helpful and polite AI assistant for Aura Living.",
