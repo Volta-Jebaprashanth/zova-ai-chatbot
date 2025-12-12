@@ -12,6 +12,21 @@
 
 ---
 
+## 📸 Screenshots
+
+<div align="center">
+
+### Zova in Action
+
+<p align="center">
+  <img src="screenshots/1.jpg" alt="Zova Chatbot Interface" height="500px" style="margin-right: 10px;">
+  <img src="screenshots/2.jpg" alt="Zova Chatbot Demo" height="500px">
+</p>
+
+</div>
+
+---
+
 ## ✨ Why Choose Zova?
 
 ### 🚀 Powered by Gemini
