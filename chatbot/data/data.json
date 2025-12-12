@@ -1,0 +1,245 @@
+{
+    "name": "Zova AI Chatbot",
+    "tagline": "Elevate Your E-commerce with AI",
+    "platform_story": "Zova is your free, open-source gateway to intelligent customer engagement. Powered by Google's Gemini AI, it bridges the gap between complex AI technology and everyday website needs. We built Zova to empower developers and business owners to offer instant, 24/7 support without breaking the bank or requiring a PhD in machine learning.",
+    "description": "A free, open-source, and fully customizable AI chatbot powered by Gemini. Integrate it into any website in minutes.",
+    "purpose": "Zova helps website owners provide instant, intelligent customer support through AI-powered conversations. Perfect for e-commerce, SaaS, portfolio sites, and more.",
+    "contact": {
+        "email": "voltajeba@gmail.com",
+        "github": "https://github.com/Volta-Jebaprashanth/zova-ai-chatbot",
+        "demo": "https://aura-living.voltajeba.com/",
+        "documentation": "https://volta-jebaprashanth.github.io/zova-home/setup-guide.html",
+        "creator": "Volta Jebaprashanth",
+        "socials": {
+            "github": "https://github.com/Volta-Jebaprashanth",
+            "linkedin": "https://www.linkedin.com/in/voltajeba/"
+        }
+    },
+    "pricing": {
+        "model": "Free & Open Source",
+        "details": "Zova itself is 100% free. You only pay for the underlying infrastructure if you exceed their free tiers.",
+        "breakdown": [
+            {
+                "item": "Zova Codebase",
+                "cost": "Free (MIT License)",
+                "note": "Download and use forever."
+            },
+            {
+                "item": "Google Gemini API",
+                "cost": "Free Tier Available",
+                "note": "Generous free tier for Gemini Flash models. Paid tiers available for high volume."
+            },
+            {
+                "item": "Cloudflare Workers",
+                "cost": "Free Tier Available",
+                "note": "100,000 requests/day for free. Sufficient for most small-medium sites."
+            }
+        ]
+    },
+    "key_features": [
+        {
+            "title": "Powered by Gemini",
+            "description": "Leverages the speed and intelligence of Gemini 2.5 Flash Lite for instant, accurate responses.",
+            "icon": "⚡"
+        },
+        {
+            "title": "Choose your own model",
+            "description": "you can choose any gemini model that fits your business complexity and requirements. it can be customized from config.json",
+            "icon": "⚡"
+        },
+        {
+            "title": "Fully Customizable",
+            "description": "Configure everything from the bot's name and personality to theme colors via a simple JSON file.",
+            "icon": "✨"
+        },
+        {
+            "title": "Secure & Private",
+            "description": "Hide your API keys using Cloudflare Workers. Your data and your customers' privacy are prioritized.",
+            "icon": "🛡️"
+        },
+        {
+            "title": "Universal Integration",
+            "description": "Works with any website. Just drop the folder, add the script, and you're ready to go.",
+            "icon": "🌐"
+        },
+        {
+            "title": "Voice Input & TTS",
+            "description": "Built-in voice input and text-to-speech capabilities for enhanced accessibility.",
+            "icon": "🎤"
+        },
+        {
+            "title": "Dark Mode Support",
+            "description": "Beautiful dark and light themes that automatically adapt to user preferences.",
+            "icon": "🌙"
+        }
+    ],
+    "integration_steps": [
+        {
+            "step": 1,
+            "title": "Download & Drop",
+            "description": "Download the chatbot folder from GitHub and place it in your website's root directory.",
+            "details": "Get the latest version from https://github.com/Volta-Jebaprashanth/zova-ai-chatbot"
+        },
+        {
+            "step": 2,
+            "title": "Add the Script",
+            "description": "Include the chatbot script before the closing </body> tag.",
+            "code": "<script src=\"chatbot/src/chatbot.js\"></script>"
+        },
+        {
+            "step": 3,
+            "title": "Configure Your Bot",
+            "description": "Edit chatbot/config.json to customize your bot's name, colors, and behavior.",
+            "details": "Set your Cloudflare Worker URL, customize colors, add your business data, and you're live!"
+        }
+    ],
+    "troubleshooting": [
+        {
+            "issue": "Chatbot not appearing",
+            "solution": "Check if the script path in your HTML is correct and ensures the 'chatbot' folder is in the root."
+        },
+        {
+            "issue": "API Key Error / No Response",
+            "solution": "Verify your Cloudflare Worker is deployed and the URL in config.json is correct. Ensure your Gemini API key is valid in the Worker."
+        },
+        {
+            "issue": "Voice input not working",
+            "solution": "Ensure your site is served over HTTPS (required for microphone access) or localhost."
+        }
+    ],
+    "limitations": [
+        "Requires an internet connection to function (calls Gemini API).",
+        "Cannot execute code or database operations directly on your server (for security).",
+        "History is stored locally in the user's browser (no central database)."
+    ],
+    "configuration_options": {
+        "business": {
+            "name": "Your business/product name",
+            "description": "Brief description of your business"
+        },
+        "bot": {
+            "name": "Chatbot name (e.g., Zova, Alex, etc.)",
+            "role": "Bot's role (e.g., Shopping Assistant, Support Agent)",
+            "initialMessage": "First message users see when opening the chat"
+        },
+        "theme": {
+            "mode": "light or dark",
+            "colors": {
+                "primaryColor": "Hex color for main theme",
+                "primaryGlow": "RGBA color for glow effects"
+            }
+        },
+        "features": {
+            "enableVoiceInput": "Enable/disable voice input",
+            "enableTextToSpeech": "Enable/disable text-to-speech"
+        }
+    },
+    "setup_requirements": [
+        {
+            "requirement": "Gemini API Key",
+            "description": "Free API key from Google AI Studio",
+            "link": "https://aistudio.google.com/apikey"
+        },
+        {
+            "requirement": "Cloudflare Account",
+            "description": "Free Cloudflare account for Workers (hides your API key)",
+            "link": "https://dash.cloudflare.com/sign-up"
+        },
+        {
+            "requirement": "Node.js & npm",
+            "description": "For Wrangler CLI to deploy Cloudflare Workers",
+            "link": "https://nodejs.org/"
+        }
+    ],
+    "FAQs": [
+        {
+            "question": "Is Zova really free?",
+            "answer": "Yes! Zova is 100% free and open-source. You only pay for Gemini API usage (which has a generous free tier) and Cloudflare Workers (also has a free tier)."
+        },
+        {
+            "question": "Do I need coding knowledge to use Zova?",
+            "answer": "Basic knowledge helps, but integration is simple. Just copy files, add one script tag, and edit a JSON config file. Our setup guide walks you through everything."
+        },
+        {
+            "question": "Can I customize the chatbot appearance?",
+            "answer": "Absolutely! You can customize colors, bot name, icon, initial message, and behavior all through the config.json file."
+        },
+        {
+            "question": "How do I add my business data to the chatbot?",
+            "answer": "Edit the data/shop-data.json file with your products, services, FAQs, and business information. The chatbot will automatically use this context to answer questions."
+        },
+        {
+            "question": "Is my API key secure?",
+            "answer": "Yes! By using Cloudflare Workers as a proxy, your Gemini API key is never exposed to the browser. It stays secure on Cloudflare's edge network."
+        },
+        {
+            "question": "Can I use Zova for non-e-commerce websites?",
+            "answer": "Definitely! While Zova is great for e-commerce, you can customize the data file for any use case: portfolios, SaaS products, blogs, documentation sites, and more."
+        },
+        {
+            "question": "What's the API usage cost?",
+            "answer": "Gemini 2.5 Flash Lite is very affordable with a generous free tier. Most small to medium websites stay within the free quota. Check Google AI pricing for details."
+        },
+        {
+            "question": "Can I deploy Zova on any hosting platform?",
+            "answer": "Yes! Zova is just HTML, CSS, and JavaScript. It works on any hosting platform: GitHub Pages, Netlify, Vercel, traditional web hosts, or even locally."
+        },
+        {
+            "question": "What happens if I exceed the free limits?",
+            "answer": "If you exceed the Gemini or Cloudflare free tiers, you may need to upgrade to a paid plan on their respective platforms. Zova itself remains free."
+        },
+        {
+            "question": "Does Zova store chat history?",
+            "answer": "Zova stores chat history locally in the user's browser (localStorage) for convenience. It does not store conversations on a central server."
+        }
+    ],
+    "technical_details": {
+        "model": "Gemini 2.5 Flash Lite",
+        "framework": "Vanilla JavaScript (no dependencies)",
+        "hosting": "Works with any static hosting",
+        "backend": "Cloudflare Workers (serverless)",
+        "file_size": "Lightweight (~50KB total)",
+        "browser_support": "All modern browsers (Chrome, Firefox, Safari, Edge)"
+    },
+    "use_cases": [
+        {
+            "type": "E-commerce",
+            "description": "Help customers find products, answer questions about shipping, pricing, and inventory in real-time."
+        },
+        {
+            "type": "SaaS Products",
+            "description": "Provide instant support for your app, answer feature questions, and guide users through onboarding."
+        },
+        {
+            "type": "Portfolio Sites",
+            "description": "Let visitors ask about your work, skills, and experience through an interactive AI assistant."
+        },
+        {
+            "type": "Documentation",
+            "description": "Make your docs searchable through conversation. Users ask questions in natural language."
+        },
+        {
+            "type": "Landing Pages",
+            "description": "Qualify leads, answer questions, and capture interest through intelligent conversations."
+        }
+    ],
+    "recommended_for_chatbot": {
+        "greeting_style": "Friendly, helpful, and knowledgeable — like a tech-savvy friend helping you set up your first chatbot.",
+        "tone": "Professional yet approachable, technical but clear.",
+        "bot_persona": "Zova Assistant — expert in chatbot integration, Gemini AI, Cloudflare Workers, and web development.",
+        "typical_questions": [
+            "How do I integrate Zova into my website?",
+            "What's the difference between light and dark mode?",
+            "How do I get a Gemini API key?",
+            "Can I customize the chatbot colors?",
+            "How do I deploy the Cloudflare Worker?",
+            "What data can I add to the chatbot?",
+            "Is Zova free to use?",
+            "How do I enable voice input?",
+            "Can I use Zova on my e-commerce site?",
+            "Where can I see a demo?",
+            "What do I do if the bot isn't responding?",
+            "Does it work on mobile?"
+        ]
+    }
+}

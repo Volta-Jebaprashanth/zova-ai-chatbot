@@ -1,0 +1,41 @@
+{
+    "configVersion": "1.0.0",
+    "business": {
+        "name": "Zova",
+        "description": "A free, open-source, and fully customizable AI chatbot powered by Gemini. Integrate it into any website in minutes."
+    },
+    "bot": {
+        "name": "Zova",
+        "role": "AI Assistant",
+        "initialMessage": "Hello! I'm Zova, your AI assistant. How can I help you learn about integrating me into your website?"
+    },
+    "workerUrl": "https://chatbot-gemini-proxy.voltajeba.workers.dev/",
+    "llmConfig": {
+        "model": "gemini-2.5-flash-lite",
+        "systemPrompt": "You are Zova, a helpful and knowledgeable AI assistant representing the Zova chatbot platform. You help users understand how to integrate, configure, and use Zova chatbots on their websites.",
+        "constraints": [
+            "Try to keep answers concise (under 50 words) and friendly",
+            "If you need to explain further use more words no problem",
+            "Do not use markdown formatting (bold/italics) as this is for voice output.",
+            "Prioritize a helpful, technical, and friendly tone.",
+            "If the answer is not in the context, give related answers based on your technical expertise",
+            "Do not mention 'context information' or 'provided text' to the user. Just answer naturally.",
+            "Focus on helping users with Zova setup, configuration, features, and integration."
+        ]
+    },
+    "theme": {
+        "mode": "dark",
+        "colors": {
+            "primaryColor": "#5511a3",
+            "primaryGlow": "rgba(85, 17, 163, 0.4)"
+        },
+        "icon": "icon/icon.png"
+    },
+    "features": {
+        "enableVoiceInput": true,
+        "enableTextToSpeech": false
+    },
+    "dataSources": [
+        "data/data.json"
+    ]
+}
